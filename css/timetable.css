@@ -1,0 +1,244 @@
+/* =================================
+   TIMETABLE PAGE
+================================= */
+
+.timetable-page {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 35px 45px 50px;
+}
+
+
+/* =================================
+   PAGE HEADING
+================================= */
+
+.page-heading {
+    margin-bottom: 30px;
+}
+
+.page-heading h2 {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.page-heading p {
+    margin-top: 8px;
+    color: var(--text-light);
+    font-size: 17px;
+}
+
+
+/* =================================
+   TIMETABLE BOX
+================================= */
+
+.timetable-box {
+    width: 100%;
+    box-sizing: border-box;
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    overflow: hidden;
+}
+
+
+/* =================================
+   TITLE
+================================= */
+
+.timetable-heading {
+    margin-bottom: 25px;
+}
+
+.timetable-heading h3 {
+    font-size: 21px;
+    font-weight: 600;
+}
+
+
+/* =================================
+   CLASS LIST
+================================= */
+
+.class-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+/* =================================
+   CLASS ROW
+================================= */
+
+.class-row {
+    display: grid;
+
+    grid-template-columns:
+        130px
+        140px
+        minmax(200px, 1fr)
+        130px;
+
+    align-items: center;
+
+    width: 100%;
+    min-height: 85px;
+
+    box-sizing: border-box;
+
+    gap: 20px;
+
+    padding: 15px 10px;
+
+    border-bottom: 1px solid
+        rgba(255, 255, 255, 0.07);
+
+    transition: background 0.2s ease;
+}
+
+.class-row:last-child {
+    border-bottom: none;
+}
+
+.class-row:hover {
+    background: rgba(255, 255, 255, 0.025);
+}
+
+
+/* =================================
+   DAY
+================================= */
+
+.class-day {
+    display: block;
+    visibility: visible;
+
+    color: #ffffff;
+
+    font-size: 16px;
+
+    font-weight: 600;
+}
+
+
+/* =================================
+   TIME
+================================= */
+
+.class-time {
+    display: block;
+    visibility: visible;
+
+    color: #8b5cf6;
+
+    font-size: 15px;
+
+    font-weight: 600;
+}
+
+
+/* =================================
+   SUBJECT
+================================= */
+
+.class-name {
+    display: block;
+    visibility: visible;
+
+    color: #ffffff;
+
+    font-size: 16px;
+
+    font-weight: 500;
+}
+
+
+/* =================================
+   ROOM
+================================= */
+
+.class-room {
+    display: block;
+    visibility: visible;
+
+    color: #b8c0d0;
+
+    font-size: 15px;
+
+    text-align: right;
+}
+
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 900px) {
+
+    .timetable-page {
+        padding: 25px;
+    }
+
+    .class-row {
+        grid-template-columns:
+            120px
+            120px
+            minmax(160px, 1fr)
+            100px;
+    }
+
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 650px) {
+
+    .class-row {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 10px;
+
+        padding: 18px 5px;
+    }
+
+    .class-name {
+        grid-column: 1 / -1;
+    }
+
+    .class-room {
+        text-align: left;
+    }
+
+}
+
+
+/* =================================
+   SMALL MOBILE
+================================= */
+
+@media (max-width: 500px) {
+
+    .timetable-page {
+        padding: 20px 15px;
+    }
+
+    .timetable-box {
+        padding: 20px 15px;
+    }
+
+    .page-heading h2 {
+        font-size: 30px;
+    }
+
+}

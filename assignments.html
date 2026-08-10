@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CampusConnect | Assignments</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/assignments.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <h1>
+                Campus<span>Connect</span>
+            </h1>
+
+            <p>College Companion</p>
+
+        </div>
+
+
+        <a href="#" class="profile-button">
+
+            <i class="fa-solid fa-user"></i>
+
+            <span>Profile</span>
+
+        </a>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="index.html" class="nav-item">
+
+                <i class="fa-solid fa-house"></i>
+
+                <span>Dashboard</span>
+
+            </a>
+
+
+            <a href="timetable.html" class="nav-item">
+
+                <i class="fa-regular fa-calendar"></i>
+
+                <span>Timetable</span>
+
+            </a>
+
+
+            <a href="assignments.html"
+               class="nav-item active">
+
+                <i class="fa-regular fa-clipboard"></i>
+
+                <span>Assignments</span>
+
+            </a>
+
+
+            <a href="study-planner.html" class="nav-item">
+
+                <i class="fa-solid fa-book-open"></i>
+
+                <span>Study Planner</span>
+
+            </a>
+
+
+            <a href="events.html" class="nav-item">
+
+                <i class="fa-solid fa-ticket"></i>
+
+                <span>Event Hub</span>
+
+            </a>
+
+
+            <a href="settings.html" class="nav-item">
+
+                <i class="fa-solid fa-gear"></i>
+
+                <span>Settings</span>
+
+            </a>
+
+        </nav>
+
+
+        <a href="#" class="logout">
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+
+            <span>Logout</span>
+
+        </a>
+
+
+        <div class="sidebar-quote">
+
+            <i class="fa-solid fa-graduation-cap"></i>
+
+            <p>
+                Stay Organized,<br>
+                Stay Ahead!
+            </p>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main-content">
+
+        <!-- HEADER -->
+
+        <header class="top-header">
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    placeholder="Search">
+
+            </div>
+
+
+            <div class="header-actions">
+
+                <button class="notification-button">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+
+                <button class="user-button">
+
+                    <i class="fa-solid fa-user"></i>
+
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- ASSIGNMENTS -->
+
+        <section class="assignments-page">
+
+            <div class="page-heading">
+
+                <h2>Assignments</h2>
+
+                <p>
+                    Manage your upcoming and completed assignments.
+                </p>
+
+            </div>
+
+
+            <div class="assignments-list">
+
+
+                <!-- DBMS -->
+
+                <div class="assignment-card">
+
+                    <div class="assignment-info">
+
+                        <h3>
+                            DBMS Assignment
+                        </h3>
+
+                        <p>
+                            Database Management Systems
+                        </p>
+
+                        <span class="due-date">
+                            Due Tomorrow
+                        </span>
+
+                    </div>
+
+
+                    <span class="assignment-status pending">
+                        Pending
+                    </span>
+
+                </div>
+
+
+                <!-- PYTHON -->
+
+                <div class="assignment-card">
+
+                    <div class="assignment-info">
+
+                        <h3>
+                            Python Project
+                        </h3>
+
+                        <p>
+                            Python Programming
+                        </p>
+
+                        <span class="due-date">
+                            Due Friday
+                        </span>
+
+                    </div>
+
+
+                    <span class="assignment-status pending">
+                        Pending
+                    </span>
+
+                </div>
+
+
+                <!-- IOT -->
+
+                <div class="assignment-card">
+
+                    <div class="assignment-info">
+
+                        <h3>
+                            IoT Record
+                        </h3>
+
+                        <p>
+                            Internet of Things
+                        </p>
+
+                        <span class="due-date">
+                            Completed
+                        </span>
+
+                    </div>
+
+
+                    <span class="assignment-status completed">
+                        Completed
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="js/assignments.js"></script>
+
+</body>
+
+</html>

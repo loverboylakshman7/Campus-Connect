@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CampusConnect | Timetable</title>
+
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Font Awesome -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="css/sidebar.css">
+
+    <link rel="stylesheet" href="css/header.css">
+
+    <link rel="stylesheet" href="css/timetable.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================================
+         SIDEBAR
+    ================================= -->
+
+    <aside class="sidebar">
+
+
+        <!-- BRAND -->
+
+        <div class="brand">
+
+            <h1>
+                Campus<span>Connect</span>
+            </h1>
+
+            <p>
+                College Companion
+            </p>
+
+        </div>
+
+
+        <!-- PROFILE -->
+
+        <a href="#" class="profile-button">
+
+            <i class="fa-solid fa-user"></i>
+
+            <span>
+                Profile
+            </span>
+
+        </a>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="sidebar-nav">
+
+
+            <!-- Dashboard -->
+
+            <a href="index.html"
+               class="nav-item">
+
+                <i class="fa-solid fa-house"></i>
+
+                <span>
+                    Dashboard
+                </span>
+
+            </a>
+
+
+            <!-- Timetable -->
+
+            <a href="timetable.html"
+               class="nav-item active">
+
+                <i class="fa-regular fa-calendar"></i>
+
+                <span>
+                    Timetable
+                </span>
+
+            </a>
+
+
+            <!-- Assignments -->
+
+            <a href="assignments.html"
+               class="nav-item">
+
+                <i class="fa-regular fa-clipboard"></i>
+
+                <span>
+                    Assignments
+                </span>
+
+            </a>
+
+
+            <!-- Study Planner -->
+
+            <a href="study-planner.html"
+               class="nav-item">
+
+                <i class="fa-solid fa-book-open"></i>
+
+                <span>
+                    Study Planner
+                </span>
+
+            </a>
+
+
+            <!-- Events -->
+
+            <a href="events.html"
+               class="nav-item">
+
+                <i class="fa-solid fa-ticket"></i>
+
+                <span>
+                    Event Hub
+                </span>
+
+            </a>
+
+
+            <!-- Settings -->
+
+            <a href="settings.html"
+               class="nav-item">
+
+                <i class="fa-solid fa-gear"></i>
+
+                <span>
+                    Settings
+                </span>
+
+            </a>
+
+        </nav>
+
+
+        <!-- LOGOUT -->
+
+        <a href="#"
+           class="logout">
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+
+            <span>
+                Logout
+            </span>
+
+        </a>
+
+
+        <!-- QUOTE -->
+
+        <div class="sidebar-quote">
+
+            <i class="fa-solid fa-graduation-cap"></i>
+
+            <p>
+                Stay Organized,<br>
+                Stay Ahead!
+            </p>
+
+        </div>
+
+
+    </aside>
+
+
+
+    <!-- ================================
+         MAIN CONTENT
+    ================================= -->
+
+    <main class="main-content">
+
+
+        <!-- HEADER -->
+
+        <header class="top-header">
+
+
+            <!-- SEARCH -->
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    placeholder="Search">
+
+            </div>
+
+
+            <!-- HEADER ACTIONS -->
+
+            <div class="header-actions">
+
+
+                <!-- NOTIFICATION -->
+
+                <button
+                    class="notification-button"
+                    type="button">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+
+                <!-- USER -->
+
+                <button
+                    class="user-button"
+                    type="button">
+
+                    <i class="fa-solid fa-user"></i>
+
+                </button>
+
+
+            </div>
+
+
+        </header>
+
+
+
+        <!-- ================================
+             TIMETABLE PAGE
+        ================================= -->
+
+        <section class="timetable-page">
+
+
+            <!-- PAGE HEADING -->
+
+            <div class="page-heading">
+
+                <h2>
+                    Timetable
+                </h2>
+
+                <p>
+                    Your weekly class schedule.
+                </p>
+
+            </div>
+
+
+
+            <!-- TIMETABLE CARD -->
+
+            <div class="timetable-box">
+
+
+                <!-- TITLE -->
+
+                <div class="timetable-heading">
+
+                    <h3>
+                        Weekly Schedule
+                    </h3>
+
+                </div>
+
+
+
+                <!-- CLASS LIST -->
+
+                <div class="class-list">
+
+
+                    <!-- MONDAY -->
+
+                    <div class="class-row">
+
+
+                        <div class="class-day">
+                            Monday
+                        </div>
+
+
+                        <div class="class-time">
+                            09:00 AM
+                        </div>
+
+
+                        <div class="class-name">
+                            Java Programming
+                        </div>
+
+
+                        <div class="class-room">
+                            Room 201
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- TUESDAY -->
+
+                    <div class="class-row">
+
+
+                        <div class="class-day">
+                            Tuesday
+                        </div>
+
+
+                        <div class="class-time">
+                            11:00 AM
+                        </div>
+
+
+                        <div class="class-name">
+                            DBMS
+                        </div>
+
+
+                        <div class="class-room">
+                            Lab 3
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- WEDNESDAY -->
+
+                    <div class="class-row">
+
+
+                        <div class="class-day">
+                            Wednesday
+                        </div>
+
+
+                        <div class="class-time">
+                            02:00 PM
+                        </div>
+
+
+                        <div class="class-name">
+                            IoT
+                        </div>
+
+
+                        <div class="class-room">
+                            Room 105
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- THURSDAY -->
+
+                    <div class="class-row">
+
+
+                        <div class="class-day">
+                            Thursday
+                        </div>
+
+
+                        <div class="class-time">
+                            04:00 PM
+                        </div>
+
+
+                        <div class="class-name">
+                            Python Programming
+                        </div>
+
+
+                        <div class="class-room">
+                            Lab 2
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- FRIDAY -->
+
+                    <div class="class-row">
+
+
+                        <div class="class-day">
+                            Friday
+                        </div>
+
+
+                        <div class="class-time">
+                            10:00 AM
+                        </div>
+
+
+                        <div class="class-name">
+                            Computer Networks
+                        </div>
+
+
+                        <div class="class-room">
+                            Room 204
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                <!-- END CLASS LIST -->
+
+
+            </div>
+            <!-- END TIMETABLE CARD -->
+
+
+        </section>
+        <!-- END TIMETABLE PAGE -->
+
+
+    </main>
+    <!-- END MAIN -->
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/main.js"></script>
+
+    <script src="js/sidebar.js"></script>
+
+    <script src="js/timetable.js"></script>
+
+
+</body>
+
+</html>

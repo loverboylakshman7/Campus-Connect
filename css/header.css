@@ -1,0 +1,139 @@
+/* ================================
+   HEADER
+================================ */
+
+.top-header {
+    height: 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 35px;
+
+    padding: 0 45px;
+}
+
+
+/* ---------- SEARCH ---------- */
+
+.search-box {
+    width: 420px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+
+    padding: 0 22px;
+
+    background: #101d2e;
+
+    border: 1px solid rgba(255, 255, 255, 0.07);
+
+    border-radius: 12px;
+}
+
+.search-box i {
+    color: #aab6c7;
+
+    font-size: 22px;
+}
+
+.search-box input {
+    width: 100%;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 17px;
+}
+
+.search-box input::placeholder {
+    color: #9ba8ba;
+}
+
+
+/* ---------- HEADER ACTIONS ---------- */
+
+.header-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+
+/* ---------- NOTIFICATION ---------- */
+
+.notification-button {
+    position: relative;
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    font-size: 27px;
+}
+
+.notification-button:hover {
+    color: var(--purple-light);
+}
+
+
+/* Notification dot */
+
+.notification-dot {
+    position: absolute;
+
+    top: 7px;
+    right: 7px;
+
+    width: 9px;
+    height: 9px;
+
+    background: var(--purple);
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 8px rgba(118, 80, 255, 0.8);
+}
+
+
+/* ---------- USER BUTTON ---------- */
+
+.user-button {
+    width: 62px;
+    height: 62px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #101d2e;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 50%;
+
+    color: white;
+
+    font-size: 23px;
+
+    transition: 0.25s ease;
+}
+
+.user-button:hover {
+    background: var(--purple);
+
+    transform: scale(1.05);
+}

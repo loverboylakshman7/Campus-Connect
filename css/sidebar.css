@@ -1,0 +1,271 @@
+/* ================================
+   SIDEBAR
+================================ */
+
+.sidebar {
+    position: fixed;
+
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+    width: 310px;
+
+    padding: 38px 24px;
+
+    background: #081321;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 0 28px 28px 0;
+
+    display: flex;
+    flex-direction: column;
+
+    z-index: 100;
+}
+
+
+/* ---------- BRAND ---------- */
+
+.brand {
+    padding: 0 14px;
+
+    margin-bottom: 40px;
+}
+
+.brand h1 {
+    font-size: 28px;
+
+    font-weight: 700;
+
+    letter-spacing: -1px;
+}
+
+.brand h1 span {
+    color: var(--purple);
+}
+
+.brand p {
+    margin-top: 8px;
+
+    color: var(--text-light);
+
+    font-size: 16px;
+}
+
+
+/* ---------- PROFILE ---------- */
+
+.profile-button {
+    height: 74px;
+
+    padding: 0 22px;
+
+    margin-bottom: 28px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    background: linear-gradient(
+        135deg,
+        #7650ff,
+        #6341e8
+    );
+
+    border-radius: 14px;
+
+    font-size: 19px;
+
+    font-weight: 600;
+
+    box-shadow:
+        0 10px 30px rgba(118, 80, 255, 0.25);
+
+    transition: 0.25s ease;
+}
+
+.profile-button i {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255, 255, 255, 0.15);
+
+    border-radius: 50%;
+
+    font-size: 21px;
+}
+
+.profile-button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 14px 35px rgba(118, 80, 255, 0.35);
+}
+
+
+/* ---------- NAVIGATION ---------- */
+
+.sidebar-nav {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+
+.nav-item {
+    position: relative;
+
+    height: 62px;
+
+    padding: 0 22px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 22px;
+
+    color: var(--text-light);
+
+    border-radius: 12px;
+
+    font-size: 17px;
+
+    font-weight: 500;
+
+    transition: 0.25s ease;
+}
+
+
+.nav-item i {
+    width: 26px;
+
+    text-align: center;
+
+    font-size: 21px;
+}
+
+
+/* ---------- ACTIVE ---------- */
+
+.nav-item.active {
+    color: white;
+
+    background: #101e30;
+}
+
+.nav-item.active::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+    width: 4px;
+
+    background: var(--blue);
+
+    border-radius: 0 5px 5px 0;
+}
+
+
+.nav-item.active i {
+    color: var(--blue);
+}
+
+
+/* ---------- HOVER ---------- */
+
+.nav-item:hover {
+    color: white;
+
+    background: #101e30;
+
+    transform: translateX(3px);
+}
+
+
+/* ---------- LOGOUT ---------- */
+
+.logout {
+    margin-top: auto;
+
+    height: 62px;
+
+    padding: 0 22px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 22px;
+
+    color: var(--text-light);
+
+    font-size: 17px;
+
+    border-radius: 12px;
+
+    transition: 0.25s ease;
+}
+
+.logout i {
+    width: 26px;
+
+    text-align: center;
+
+    font-size: 21px;
+}
+
+.logout:hover {
+    color: white;
+
+    background: #101e30;
+}
+
+
+/* ---------- QUOTE ---------- */
+
+.sidebar-quote {
+    margin-top: 24px;
+
+    padding: 20px;
+
+    min-height: 90px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 14px;
+
+    background: rgba(255, 255, 255, 0.015);
+}
+
+.sidebar-quote i {
+    color: var(--purple);
+
+    font-size: 30px;
+}
+
+.sidebar-quote p {
+    color: var(--text-light);
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    font-weight: 500;
+}

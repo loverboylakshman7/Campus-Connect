@@ -1,0 +1,488 @@
+/* ================================
+   DASHBOARD
+================================ */
+
+.main-content {
+    margin-left: 310px;
+    min-height: 100vh;
+}
+
+
+/* ---------- DASHBOARD ---------- */
+
+.dashboard {
+    padding: 25px 45px 50px;
+}
+
+
+/* ---------- GREETING ---------- */
+
+.greeting {
+    margin-bottom: 32px;
+}
+
+.greeting h2 {
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.greeting p {
+    margin-top: 10px;
+    color: var(--text-light);
+    font-size: 17px;
+}
+
+
+/* ---------- STATISTICS ---------- */
+
+.stats-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+
+    margin-bottom: 28px;
+}
+
+.stat-card {
+    min-height: 175px;
+
+    padding: 30px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 28px;
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 18px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    transition: 0.25s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+
+    border-color: rgba(255, 255, 255, 0.14);
+}
+
+
+/* ---------- STAT ICON ---------- */
+
+.stat-icon {
+    width: 84px;
+    height: 84px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    font-size: 36px;
+
+    color: white;
+}
+
+
+/* Classes */
+
+.classes-card .stat-icon {
+    background: linear-gradient(
+        135deg,
+        #6f45e8,
+        #8b5cf6
+    );
+}
+
+
+/* Events */
+
+.events-card .stat-icon {
+    background: linear-gradient(
+        135deg,
+        #ed8218,
+        #f59e0b
+    );
+}
+
+
+/* ---------- STAT INFO ---------- */
+
+.stat-info h3 {
+    font-size: 52px;
+
+    line-height: 1;
+
+    font-weight: 700;
+}
+
+.stat-info p {
+    margin-top: 10px;
+
+    color: var(--text-light);
+
+    font-size: 17px;
+}
+
+
+/* ---------- PROGRESS LINE ---------- */
+
+.stat-card::after {
+    content: "";
+
+    position: absolute;
+
+    left: 30px;
+    right: 30px;
+    bottom: 18px;
+
+    height: 4px;
+
+    background: #1c2c40;
+
+    border-radius: 10px;
+}
+
+.classes-card::before {
+    content: "";
+
+    position: absolute;
+
+    left: 30px;
+    bottom: 18px;
+
+    width: 65%;
+
+    height: 4px;
+
+    background: var(--purple);
+
+    border-radius: 10px;
+
+    z-index: 2;
+}
+
+.events-card::before {
+    content: "";
+
+    position: absolute;
+
+    left: 30px;
+    bottom: 18px;
+
+    width: 55%;
+
+    height: 4px;
+
+    background: var(--orange);
+
+    border-radius: 10px;
+
+    z-index: 2;
+}
+
+
+/* ---------- TIMETABLE CARD ---------- */
+
+.timetable-card {
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    overflow: hidden;
+}
+
+
+/* ---------- SECTION HEADER ---------- */
+
+.section-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+.section-title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+}
+
+.section-title i {
+    font-size: 25px;
+
+    color: white;
+}
+
+.section-title h3 {
+    font-size: 20px;
+
+    letter-spacing: 0.3px;
+}
+
+.section-header > a {
+    color: var(--blue);
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    transition: 0.2s ease;
+}
+
+.section-header > a:hover {
+    color: #62b4ff;
+}
+
+
+/* ---------- SCHEDULE ---------- */
+
+.schedule-list {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.schedule-item {
+    min-height: 108px;
+
+    display: flex;
+
+    align-items: center;
+
+    position: relative;
+
+    padding: 18px 5px 18px 50px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.schedule-item:last-child {
+    border-bottom: none;
+}
+
+
+/* ---------- TIMELINE ---------- */
+
+.schedule-item::before {
+    content: "";
+
+    position: absolute;
+
+    left: 18px;
+
+    top: 0;
+    bottom: 0;
+
+    width: 2px;
+
+    background: #24354a;
+}
+
+.schedule-item:first-child::before {
+    top: 50%;
+}
+
+.schedule-item:last-child::before {
+    bottom: 50%;
+}
+
+
+/* ---------- DOT ---------- */
+
+.schedule-dot {
+    position: absolute;
+
+    left: 10px;
+
+    width: 18px;
+    height: 18px;
+
+    border-radius: 50%;
+
+    border: 3px solid var(--card);
+
+    z-index: 2;
+}
+
+.schedule-dot.purple {
+    background: var(--purple);
+}
+
+.schedule-dot.green {
+    background: var(--green);
+}
+
+.schedule-dot.orange {
+    background: var(--orange);
+}
+
+.schedule-dot.blue {
+    background: var(--blue);
+}
+
+
+/* ---------- SCHEDULE INFO ---------- */
+
+.schedule-info strong {
+    display: block;
+
+    font-size: 18px;
+
+    margin-bottom: 10px;
+}
+
+.schedule-item:nth-child(1) .schedule-info strong {
+    color: var(--purple);
+}
+
+.schedule-item:nth-child(2) .schedule-info strong {
+    color: var(--green);
+}
+
+.schedule-item:nth-child(3) .schedule-info strong {
+    color: var(--orange);
+}
+
+.schedule-item:nth-child(4) .schedule-info strong {
+    color: var(--blue);
+}
+
+.schedule-info h4 {
+    font-size: 18px;
+
+    font-weight: 500;
+}
+
+
+/* ---------- ROOM ---------- */
+
+.room {
+    margin-left: auto;
+
+    color: var(--text-light);
+
+    font-size: 16px;
+}
+
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 1100px) {
+
+    .main-content {
+        margin-left: 250px;
+    }
+
+    .sidebar {
+        width: 250px;
+    }
+
+    .dashboard {
+        padding: 25px;
+    }
+
+    .top-header {
+        padding: 0 25px;
+    }
+
+    .search-box {
+        width: 300px;
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    .sidebar {
+        position: relative;
+
+        width: 100%;
+
+        border-radius: 0;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .top-header {
+        padding: 20px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    .top-header {
+        justify-content: space-between;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .dashboard {
+        padding: 20px 15px;
+    }
+
+    .greeting h2 {
+        font-size: 28px;
+    }
+
+    .stat-card {
+        padding: 22px;
+    }
+
+    .stat-icon {
+        width: 65px;
+        height: 65px;
+
+        font-size: 27px;
+    }
+
+    .stat-info h3 {
+        font-size: 40px;
+    }
+
+    .timetable-card {
+        padding: 20px 15px;
+    }
+
+    .schedule-item {
+        padding-left: 40px;
+    }
+
+    .room {
+        display: none;
+    }
+
+}

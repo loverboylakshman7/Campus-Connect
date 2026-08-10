@@ -1,0 +1,126 @@
+/* ================================
+   ASSIGNMENTS PAGE
+================================ */
+
+.assignments-page {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 35px 45px 50px;
+}
+
+/* ---------- PAGE HEADING ---------- */
+
+.page-heading {
+    margin-bottom: 30px;
+}
+
+.page-heading h2 {
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.page-heading p {
+    margin-top: 8px;
+    color: var(--text-light);
+    font-size: 17px;
+}
+
+/* ---------- ASSIGNMENTS LIST ---------- */
+
+.assignments-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* ---------- ASSIGNMENT CARD ---------- */
+
+.assignment-card {
+    width: 100%;
+    min-height: 110px;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: 1fr auto;
+
+    align-items: center;
+    gap: 25px;
+
+    padding: 25px 30px;
+
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+
+    transition: 0.25s ease;
+}
+
+.assignment-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(139, 92, 246, 0.5);
+}
+
+/* ---------- ASSIGNMENT INFO ---------- */
+
+.assignment-info h3 {
+    margin: 0;
+
+    color: var(--text);
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.assignment-info p {
+    margin-top: 8px;
+
+    color: var(--text-light);
+    font-size: 14px;
+}
+
+/* ---------- STATUS ---------- */
+
+.assignment-status {
+    padding: 8px 16px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+.assignment-status.pending {
+    color: #f59e0b;
+    background: rgba(245, 158, 11, 0.12);
+}
+
+.assignment-status.completed {
+    color: #22c55e;
+    background: rgba(34, 197, 94, 0.12);
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 700px) {
+
+    .assignments-page {
+        padding: 25px 20px 40px;
+    }
+
+    .page-heading h2 {
+        font-size: 30px;
+    }
+
+    .assignment-card {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .assignment-status {
+        width: fit-content;
+    }
+}

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusConnect | Dashboard</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+            <h1>
+                Campus<span>Connect</span>
+            </h1>
+
+            <p>College Companion</p>
+        </div>
+
+
+        <!-- Profile -->
+
+        <a href="#" class="profile-button">
+            <i class="fa-solid fa-user"></i>
+            <span>Profile</span>
+        </a>
+
+
+        <!-- Navigation -->
+
+        <nav class="sidebar-nav">
+
+            <a href="index.html" class="nav-item active">
+                <i class="fa-solid fa-house"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="timetable.html" class="nav-item">
+                <i class="fa-regular fa-calendar"></i>
+                <span>Timetable</span>
+            </a>
+
+            <a href="assignments.html" class="nav-item">
+                <i class="fa-regular fa-clipboard"></i>
+                <span>Assignments</span>
+            </a>
+
+            <a href="study-planner.html" class="nav-item">
+                <i class="fa-solid fa-book-open"></i>
+                <span>Study Planner</span>
+            </a>
+
+            <a href="events.html" class="nav-item">
+                <i class="fa-solid fa-ticket"></i>
+                <span>Event Hub</span>
+            </a>
+
+            <a href="settings.html" class="nav-item">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
+            </a>
+
+        </nav>
+
+
+        <!-- Logout -->
+
+        <a href="#" class="logout">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span>Logout</span>
+        </a>
+
+
+        <!-- Sidebar Quote -->
+
+        <div class="sidebar-quote">
+
+            <i class="fa-solid fa-graduation-cap"></i>
+
+            <p>
+                Stay Organized,<br>
+                Stay Ahead!
+            </p>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="main-content">
+
+
+        <!-- HEADER -->
+
+        <header class="top-header">
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    placeholder="Search">
+
+            </div>
+
+
+            <div class="header-actions">
+
+                <button class="notification-button">
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-dot"></span>
+                </button>
+
+
+                <button class="user-button">
+                    <i class="fa-solid fa-user"></i>
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= DASHBOARD ================= -->
+
+        <section class="dashboard">
+
+
+            <!-- Greeting -->
+
+            <div class="greeting">
+
+                <h2>
+                    Good Morning! 👋
+                </h2>
+
+                <p>
+                    Here's what's happening on campus today.
+                </p>
+
+            </div>
+
+
+            <!-- Statistics -->
+
+            <div class="stats-grid">
+
+
+                <!-- Classes -->
+
+                <div class="stat-card classes-card">
+
+                    <div class="stat-icon">
+                        <i class="fa-regular fa-calendar"></i>
+                    </div>
+
+                    <div class="stat-info">
+
+                        <h3>4</h3>
+
+                        <p>Classes Today</p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Events -->
+
+                <div class="stat-card events-card">
+
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-ticket"></i>
+                    </div>
+
+                    <div class="stat-info">
+
+                        <h3>2</h3>
+
+                        <p>Events</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= TIMETABLE ================= -->
+
+            <section class="timetable-card">
+
+                <div class="section-header">
+
+                    <div class="section-title">
+
+                        <i class="fa-regular fa-calendar"></i>
+
+                        <h3>
+                            TODAY'S TIMETABLE
+                        </h3>
+
+                    </div>
+
+                    <a href="timetable.html">
+                        View All
+                    </a>
+
+                </div>
+
+
+                <div class="schedule-list">
+
+
+                    <!-- Java -->
+
+                    <div class="schedule-item">
+
+                        <div class="schedule-dot purple"></div>
+
+                        <div class="schedule-info">
+
+                            <strong>
+                                09:00 AM
+                            </strong>
+
+                            <h4>
+                                Java Programming
+                            </h4>
+
+                        </div>
+
+                        <span class="room">
+                            Room 201
+                        </span>
+
+                    </div>
+
+
+                    <!-- DBMS -->
+
+                    <div class="schedule-item">
+
+                        <div class="schedule-dot green"></div>
+
+                        <div class="schedule-info">
+
+                            <strong>
+                                11:00 AM
+                            </strong>
+
+                            <h4>
+                                DBMS
+                            </h4>
+
+                        </div>
+
+                        <span class="room">
+                            Lab 3
+                        </span>
+
+                    </div>
+
+
+                    <!-- IoT -->
+
+                    <div class="schedule-item">
+
+                        <div class="schedule-dot orange"></div>
+
+                        <div class="schedule-info">
+
+                            <strong>
+                                02:00 PM
+                            </strong>
+
+                            <h4>
+                                IoT
+                            </h4>
+
+                        </div>
+
+                        <span class="room">
+                            Room 105
+                        </span>
+
+                    </div>
+
+
+                    <!-- Python -->
+
+                    <div class="schedule-item">
+
+                        <div class="schedule-dot blue"></div>
+
+                        <div class="schedule-info">
+
+                            <strong>
+                                04:00 PM
+                            </strong>
+
+                            <h4>
+                                Python Programming
+                            </h4>
+
+                        </div>
+
+                        <span class="room">
+                            Lab 2
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </section>
+
+    </main>
+
+
+    <!-- JavaScript -->
+
+    <script src="js/main.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>
