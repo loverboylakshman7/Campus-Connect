@@ -1,0 +1,497 @@
+/* =================================
+   CAMPUSCONNECT
+   PROFILE PAGE
+================================= */
+
+
+/* ---------- PAGE ---------- */
+
+.profile-page {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 35px 45px 60px;
+
+}
+
+
+/* ---------- HEADING ---------- */
+
+.page-heading {
+
+    margin-bottom: 30px;
+
+}
+
+.page-heading h2 {
+
+    margin: 0;
+
+    color: var(--text);
+
+    font-size: 38px;
+
+    font-weight: 700;
+
+}
+
+.page-heading p {
+
+    margin-top: 8px;
+
+    color: var(--text-light);
+
+    font-size: 16px;
+
+}
+
+
+/* ---------- PROFILE CARD ---------- */
+
+.profile-card {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 30px;
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 20px;
+
+}
+
+
+/* ---------- PROFILE TOP ---------- */
+
+.profile-top {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 22px;
+
+    padding-bottom: 28px;
+
+    border-bottom: 1px solid var(--border);
+
+}
+
+
+/* ---------- AVATAR ---------- */
+
+.profile-avatar {
+
+    width: 90px;
+
+    height: 90px;
+
+    min-width: 90px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        135deg,
+        var(--purple),
+        var(--purple-light)
+    );
+
+    color: white;
+
+    font-size: 38px;
+
+    box-shadow:
+        0 10px 30px
+        rgba(118, 80, 255, 0.25);
+
+}
+
+
+/* ---------- MAIN INFO ---------- */
+
+.profile-main-info h3 {
+
+    margin: 0;
+
+    font-size: 25px;
+
+    font-weight: 700;
+
+}
+
+.profile-main-info p {
+
+    margin-top: 7px;
+
+    color: var(--text-light);
+
+    font-size: 14px;
+
+}
+
+
+/* ---------- STATUS ---------- */
+
+.student-status {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin-top: 12px;
+
+    padding: 6px 11px;
+
+    border-radius: 20px;
+
+    background:
+        rgba(53, 201, 107, 0.10);
+
+    color: var(--green);
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+}
+
+.student-status i {
+
+    font-size: 7px;
+
+}
+
+
+/* ---------- INFORMATION ---------- */
+
+.profile-information {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 18px;
+
+    margin-top: 28px;
+
+}
+
+
+/* ---------- INFO ITEM ---------- */
+
+.profile-info-item {
+
+    padding: 20px;
+
+    background: rgba(255, 255, 255, 0.025);
+
+    border: 1px solid var(--border);
+
+    border-radius: 13px;
+
+    transition: 0.2s ease;
+
+}
+
+.profile-info-item:hover {
+
+    background:
+        rgba(118, 80, 255, 0.06);
+
+    border-color:
+        rgba(118, 80, 255, 0.25);
+
+}
+
+
+/* ---------- LABEL ---------- */
+
+.info-label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: var(--text-muted);
+
+    font-size: 12px;
+
+    font-weight: 500;
+
+}
+
+
+/* ---------- VALUE ---------- */
+
+.profile-info-item strong {
+
+    color: var(--text);
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    word-break: break-word;
+
+}
+
+
+/* ---------- ACTIONS ---------- */
+
+.profile-actions {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    margin-top: 25px;
+
+}
+
+
+/* ---------- EDIT BUTTON ---------- */
+
+.edit-profile-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 12px 19px;
+
+    background: var(--purple);
+
+    color: white;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: 0.2s ease;
+
+}
+
+.edit-profile-button:hover {
+
+    background: var(--purple-light);
+
+    transform: translateY(-2px);
+
+}
+
+
+/* =================================
+   PROFILE STATS
+================================= */
+
+.profile-stats {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+
+    margin-top: 22px;
+
+}
+
+
+/* ---------- STAT ---------- */
+
+.profile-stat {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 17px;
+
+    padding: 22px;
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 16px;
+
+    transition: 0.2s ease;
+
+}
+
+.profile-stat:hover {
+
+    transform: translateY(-2px);
+
+    border-color:
+        rgba(118, 80, 255, 0.35);
+
+}
+
+
+/* ---------- STAT ICON ---------- */
+
+.profile-stat > i {
+
+    width: 48px;
+
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background:
+        rgba(118, 80, 255, 0.12);
+
+    color: var(--purple-light);
+
+    font-size: 19px;
+
+}
+
+
+/* ---------- STAT TEXT ---------- */
+
+.profile-stat strong {
+
+    display: block;
+
+    color: var(--text);
+
+    font-size: 21px;
+
+    font-weight: 700;
+
+}
+
+.profile-stat span {
+
+    display: block;
+
+    margin-top: 4px;
+
+    color: var(--text-muted);
+
+    font-size: 12px;
+
+}
+
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 950px) {
+
+    .profile-page {
+
+        padding: 30px 25px 50px;
+
+    }
+
+    .profile-stats {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .profile-page {
+
+        padding: 25px 18px 40px;
+
+    }
+
+    .page-heading h2 {
+
+        font-size: 30px;
+
+    }
+
+    .profile-card {
+
+        padding: 22px;
+
+    }
+
+    .profile-information {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .profile-top {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+    }
+
+    .profile-avatar {
+
+        width: 75px;
+
+        height: 75px;
+
+        min-width: 75px;
+
+        font-size: 30px;
+
+    }
+
+    .profile-main-info h3 {
+
+        font-size: 21px;
+
+    }
+
+    .profile-actions {
+
+        justify-content: stretch;
+
+    }
+
+    .edit-profile-button {
+
+        width: 100%;
+
+        justify-content: center;
+
+    }
+
+}

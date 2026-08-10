@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CampusConnect | Event Hub</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/events.css">
+
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <h1>
+                Campus<span>Connect</span>
+            </h1>
+
+            <p>College Companion</p>
+
+        </div>
+
+
+        <a href="profile.html" class="profile-button">
+
+            <i class="fa-solid fa-user"></i>
+
+            <span>Profile</span>
+
+        </a>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="index.html" class="nav-item">
+
+                <i class="fa-solid fa-house"></i>
+
+                <span>Dashboard</span>
+
+            </a>
+
+
+            <a href="timetable.html" class="nav-item">
+
+                <i class="fa-regular fa-calendar"></i>
+
+                <span>Timetable</span>
+
+            </a>
+
+
+            <a href="assignments.html" class="nav-item">
+
+                <i class="fa-regular fa-clipboard"></i>
+
+                <span>Assignments</span>
+
+            </a>
+
+
+            <a href="study-planner.html" class="nav-item">
+
+                <i class="fa-solid fa-book-open"></i>
+
+                <span>Study Planner</span>
+
+            </a>
+
+
+            <a href="events.html" class="nav-item active">
+
+                <i class="fa-solid fa-ticket"></i>
+
+                <span>Event Hub</span>
+
+            </a>
+
+
+            <a href="settings.html" class="nav-item">
+
+                <i class="fa-solid fa-gear"></i>
+
+                <span>Settings</span>
+
+            </a>
+
+        </nav>
+
+
+        <a href="#" class="logout">
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+
+            <span>Logout</span>
+
+        </a>
+
+
+        <div class="sidebar-quote">
+
+            <i class="fa-solid fa-graduation-cap"></i>
+
+            <p>
+                Stay Organized,<br>
+                Stay Ahead!
+            </p>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main-content">
+
+
+        <!-- HEADER -->
+
+        <header class="top-header">
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    id="eventSearch"
+                    placeholder="Search events">
+
+            </div>
+
+
+            <div class="header-actions">
+                <button class="user-button">
+
+                    <i class="fa-solid fa-user"></i>
+
+                </button>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- EVENT HUB -->
+
+        <section class="events-page">
+
+
+            <div class="page-heading">
+
+                <h2>Event Hub</h2>
+
+                <p>
+                    Discover upcoming college events and activities.
+                </p>
+
+            </div>
+
+
+
+            <!-- EVENT FILTERS -->
+
+            <div class="event-filters">
+
+                <button class="filter-button active"
+                        data-filter="all">
+                    All Events
+                </button>
+
+                <button class="filter-button"
+                        data-filter="academic">
+                    Academic
+                </button>
+
+                <button class="filter-button"
+                        data-filter="technical">
+                    Technical
+                </button>
+
+                <button class="filter-button"
+                        data-filter="cultural">
+                    Cultural
+                </button>
+
+            </div>
+
+
+
+            <!-- EVENTS -->
+
+            <div class="events-grid" id="eventsGrid">
+
+
+                <!-- EVENT 1 -->
+
+                <article class="event-card"
+                         data-category="academic">
+
+                    <div class="event-icon academic">
+
+                        <i class="fa-solid fa-graduation-cap"></i>
+
+                    </div>
+
+
+                    <div class="event-content">
+
+                        <span class="event-category">
+                            Academic
+                        </span>
+
+                        <h3>
+                            Semester Examination
+                        </h3>
+
+                        <p>
+                            End-semester examination schedule
+                            and important academic updates.
+                        </p>
+
+
+                        <div class="event-details">
+
+                            <span>
+                                <i class="fa-regular fa-calendar"></i>
+                                20 August
+                            </span>
+
+                            <span>
+                                <i class="fa-regular fa-clock"></i>
+                                10:00 AM
+                            </span>
+
+                        </div>
+
+
+                        <button class="event-button">
+                            View Details
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- EVENT 2 -->
+
+                <article class="event-card"
+                         data-category="technical">
+
+                    <div class="event-icon technical">
+
+                        <i class="fa-solid fa-code"></i>
+
+                    </div>
+
+
+                    <div class="event-content">
+
+                        <span class="event-category">
+                            Technical
+                        </span>
+
+                        <h3>
+                            Tech Fest 2026
+                        </h3>
+
+                        <p>
+                            Technical competitions, coding events
+                            and project demonstrations.
+                        </p>
+
+
+                        <div class="event-details">
+
+                            <span>
+                                <i class="fa-regular fa-calendar"></i>
+                                25 August
+                            </span>
+
+                            <span>
+                                <i class="fa-regular fa-clock"></i>
+                                09:30 AM
+                            </span>
+
+                        </div>
+
+
+                        <button class="event-button">
+                            View Details
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- EVENT 3 -->
+
+                <article class="event-card"
+                         data-category="cultural">
+
+                    <div class="event-icon cultural">
+
+                        <i class="fa-solid fa-music"></i>
+
+                    </div>
+
+
+                    <div class="event-content">
+
+                        <span class="event-category">
+                            Cultural
+                        </span>
+
+                        <h3>
+                            College Cultural Fest
+                        </h3>
+
+                        <p>
+                            Music, dance, performances and
+                            cultural activities for students.
+                        </p>
+
+
+                        <div class="event-details">
+
+                            <span>
+                                <i class="fa-regular fa-calendar"></i>
+                                30 August
+                            </span>
+
+                            <span>
+                                <i class="fa-regular fa-clock"></i>
+                                11:00 AM
+                            </span>
+
+                        </div>
+
+
+                        <button class="event-button">
+                            View Details
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- EVENT 4 -->
+
+                <article class="event-card"
+                         data-category="technical">
+
+                    <div class="event-icon technical">
+
+                        <i class="fa-solid fa-microchip"></i>
+
+                    </div>
+
+
+                    <div class="event-content">
+
+                        <span class="event-category">
+                            Technical
+                        </span>
+
+                        <h3>
+                            IoT Workshop
+                        </h3>
+
+                        <p>
+                            Hands-on workshop covering IoT devices,
+                            sensors and real-world applications.
+                        </p>
+
+
+                        <div class="event-details">
+
+                            <span>
+                                <i class="fa-regular fa-calendar"></i>
+                                5 September
+                            </span>
+
+                            <span>
+                                <i class="fa-regular fa-clock"></i>
+                                02:00 PM
+                            </span>
+
+                        </div>
+
+
+                        <button class="event-button">
+                            View Details
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="js/events.js"></script>
+
+</body>
+
+</html

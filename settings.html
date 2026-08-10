@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CampusConnect | Settings</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/settings.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <h1>
+                Campus<span>Connect</span>
+            </h1>
+
+            <p>
+                College Companion
+            </p>
+
+        </div>
+
+
+        <a href="profile.html" class="profile-button">
+
+            <i class="fa-solid fa-user"></i>
+
+            <span>
+                Profile
+            </span>
+
+        </a>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="index.html" class="nav-item">
+
+                <i class="fa-solid fa-house"></i>
+
+                <span>
+                    Dashboard
+                </span>
+
+            </a>
+
+
+            <a href="timetable.html" class="nav-item">
+
+                <i class="fa-regular fa-calendar"></i>
+
+                <span>
+                    Timetable
+                </span>
+
+            </a>
+
+
+            <a href="assignments.html" class="nav-item">
+
+                <i class="fa-regular fa-clipboard"></i>
+
+                <span>
+                    Assignments
+                </span>
+
+            </a>
+
+
+            <a href="study-planner.html" class="nav-item">
+
+                <i class="fa-solid fa-book-open"></i>
+
+                <span>
+                    Study Planner
+                </span>
+
+            </a>
+
+
+            <a href="events.html" class="nav-item">
+
+                <i class="fa-solid fa-ticket"></i>
+
+                <span>
+                    Event Hub
+                </span>
+
+            </a>
+
+
+            <a href="settings.html"
+               class="nav-item active">
+
+                <i class="fa-solid fa-gear"></i>
+
+                <span>
+                    Settings
+                </span>
+
+            </a>
+
+        </nav>
+
+
+        <a href="#" class="logout">
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+
+            <span>
+                Logout
+            </span>
+
+        </a>
+
+
+        <div class="sidebar-quote">
+
+            <i class="fa-solid fa-graduation-cap"></i>
+
+            <p>
+                Stay Organized,<br>
+                Stay Ahead!
+            </p>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main-content">
+
+
+        <!-- HEADER -->
+
+        <header class="top-header">
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    placeholder="Search">
+
+            </div>
+
+
+            <div class="header-actions">
+
+                <button
+                    class="notification-button"
+                    type="button">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+
+                <button
+                    class="user-button"
+                    type="button">
+
+                    <i class="fa-solid fa-user"></i>
+
+                </button>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- ================= SETTINGS ================= -->
+
+        <section class="settings-page">
+
+
+            <div class="page-heading">
+
+                <h2>
+                    Settings
+                </h2>
+
+                <p>
+                    Manage your CampusConnect preferences.
+                </p>
+
+            </div>
+
+
+
+            <!-- PROFILE -->
+
+            <div class="settings-section">
+
+                <div class="settings-section-title">
+
+                    <div class="settings-title-icon">
+
+                        <i class="fa-solid fa-user"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Profile
+                        </h3>
+
+                        <p>
+                            Your personal information
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="settings-form">
+
+                    <div class="form-group">
+
+                        <label for="studentName">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="studentName"
+                            value="Student">
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="studentEmail">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="studentEmail"
+                            value="student@example.com">
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="studentCourse">
+                            Course
+                        </label>
+
+                        <input
+                            type="text"
+                            id="studentCourse"
+                            value="Computer Engineering">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- NOTIFICATIONS -->
+
+            <div class="settings-section">
+
+                <div class="settings-section-title">
+
+                    <div class="settings-title-icon">
+
+                        <i class="fa-regular fa-bell"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Notifications
+                        </h3>
+
+                        <p>
+                            Control your notification preferences
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="setting-option">
+
+                    <div>
+
+                        <h4>
+                            Assignment Reminders
+                        </h4>
+
+                        <p>
+                            Get reminders about upcoming assignments.
+                        </p>
+
+                    </div>
+
+
+                    <label class="switch">
+
+                        <input
+                            type="checkbox"
+                            id="assignmentNotifications"
+                            checked>
+
+                        <span class="slider"></span>
+
+                    </label>
+
+                </div>
+
+
+                <div class="setting-option">
+
+                    <div>
+
+                        <h4>
+                            Event Notifications
+                        </h4>
+
+                        <p>
+                            Receive updates about college events.
+                        </p>
+
+                    </div>
+
+
+                    <label class="switch">
+
+                        <input
+                            type="checkbox"
+                            id="eventNotifications"
+                            checked>
+
+                        <span class="slider"></span>
+
+                    </label>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- APPEARANCE -->
+
+            <div class="settings-section">
+
+                <div class="settings-section-title">
+
+                    <div class="settings-title-icon">
+
+                        <i class="fa-solid fa-palette"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Appearance
+                        </h3>
+
+                        <p>
+                            Customize your interface
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="setting-option">
+
+                    <div>
+
+                        <h4>
+                            Dark Interface
+                        </h4>
+
+                        <p>
+                            Use the CampusConnect dark interface.
+                        </p>
+
+                    </div>
+
+
+                    <label class="switch">
+
+                        <input
+                            type="checkbox"
+                            id="darkMode"
+                            checked>
+
+                        <span class="slider"></span>
+
+                    </label>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- SAVE -->
+
+            <div class="settings-actions">
+
+                <button
+                    class="save-button"
+                    id="saveSettings">
+
+                    <i class="fa-solid fa-check"></i>
+
+                    Save Changes
+
+                </button>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+
+    <script src="js/main.js"></script>
+
+    <script src="js/sidebar.js"></script>
+
+    <script src="js/settings.js"></script>
+
+</body>
+
+</html>

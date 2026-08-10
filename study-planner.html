@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusConnect | Study Planner</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/study-planner.css">
+
+</head>
+
+<body>
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <h1>
+                Campus<span>Connect</span>
+            </h1>
+
+            <p>College Companion</p>
+
+        </div>
+
+
+        <a href="profile.html" class="profile-button">
+
+            <i class="fa-solid fa-user"></i>
+
+            <span>Profile</span>
+
+        </a>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="index.html" class="nav-item">
+
+                <i class="fa-solid fa-house"></i>
+
+                <span>Dashboard</span>
+
+            </a>
+
+
+            <a href="timetable.html" class="nav-item">
+
+                <i class="fa-regular fa-calendar"></i>
+
+                <span>Timetable</span>
+
+            </a>
+
+
+            <a href="assignments.html" class="nav-item">
+
+                <i class="fa-regular fa-clipboard"></i>
+
+                <span>Assignments</span>
+
+            </a>
+
+
+            <a href="study-planner.html"
+               class="nav-item active">
+
+                <i class="fa-solid fa-book-open"></i>
+
+                <span>Study Planner</span>
+
+            </a>
+
+
+            <a href="events.html" class="nav-item">
+
+                <i class="fa-solid fa-ticket"></i>
+
+                <span>Event Hub</span>
+
+            </a>
+
+
+            <a href="settings.html" class="nav-item">
+
+                <i class="fa-solid fa-gear"></i>
+
+                <span>Settings</span>
+
+            </a>
+
+        </nav>
+
+
+        <a href="#" class="logout">
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+
+            <span>Logout</span>
+
+        </a>
+
+
+        <div class="sidebar-quote">
+
+            <i class="fa-solid fa-graduation-cap"></i>
+
+            <p>
+                Stay Organized,<br>
+                Stay Ahead!
+            </p>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main-content">
+
+
+        <!-- HEADER -->
+
+        <header class="top-header">
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    placeholder="Search">
+
+            </div>
+
+
+            <div class="header-actions">
+
+           
+
+
+                <button class="user-button">
+
+                    <i class="fa-solid fa-user"></i>
+
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= STUDY PLANNER ================= -->
+
+        <section class="study-page">
+
+
+            <!-- PAGE TITLE -->
+
+            <div class="page-heading">
+
+                <div>
+
+                    <h2>Study Planner</h2>
+
+                    <p>
+                        Organize your study sessions and stay productive.
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="add-study-btn"
+                    id="addStudyBtn">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    Add Study Session
+
+                </button>
+
+            </div>
+
+
+            <!-- ================= SUMMARY ================= -->
+
+            <div class="study-summary">
+
+                <div class="summary-card">
+
+                    <div class="summary-icon purple">
+
+                        <i class="fa-solid fa-book"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h3 id="totalSessions">5</h3>
+
+                        <p>Total Sessions</p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="summary-card">
+
+                    <div class="summary-icon blue">
+
+                        <i class="fa-solid fa-clock"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h3 id="totalHours">8h</h3>
+
+                        <p>Study Hours</p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="summary-card">
+
+                    <div class="summary-icon green">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h3 id="completedSessions">2</h3>
+
+                        <p>Completed</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= TODAY ================= -->
+
+            <div class="planner-box">
+
+                <div class="planner-header">
+
+                    <div>
+
+                        <h3>Today's Study Plan</h3>
+
+                        <p>
+                            Focus on your most important subjects.
+                        </p>
+
+                    </div>
+
+                    <span class="today-label">
+
+                        Today
+
+                    </span>
+
+                </div>
+
+
+                <div class="study-list" id="studyList">
+
+
+                    <!-- SESSION 1 -->
+
+                    <div class="study-item">
+
+                        <div class="study-time">
+
+                            <span>06:00</span>
+
+                            <small>AM</small>
+
+                        </div>
+
+
+                        <div class="study-line">
+
+                            <span></span>
+
+                        </div>
+
+
+                        <div class="study-details">
+
+                            <div class="study-title">
+
+                                <h4>Java Programming</h4>
+
+                                <span class="priority high">
+                                    High
+                                </span>
+
+                            </div>
+
+                            <p>
+                                OOP concepts and inheritance
+                            </p>
+
+                            <span class="duration">
+
+                                <i class="fa-regular fa-clock"></i>
+
+                                2 hours
+
+                            </span>
+
+                        </div>
+
+
+                        <button class="complete-btn">
+
+                            <i class="fa-solid fa-check"></i>
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- SESSION 2 -->
+
+                    <div class="study-item">
+
+                        <div class="study-time">
+
+                            <span>10:00</span>
+
+                            <small>AM</small>
+
+                        </div>
+
+
+                        <div class="study-line">
+
+                            <span></span>
+
+                        </div>
+
+
+                        <div class="study-details">
+
+                            <div class="study-title">
+
+                                <h4>DBMS</h4>
+
+                                <span class="priority medium">
+                                    Medium
+                                </span>
+
+                            </div>
+
+                            <p>
+                                SQL queries and normalization
+                            </p>
+
+                            <span class="duration">
+
+                                <i class="fa-regular fa-clock"></i>
+
+                                1.5 hours
+
+                            </span>
+
+                        </div>
+
+
+                        <button class="complete-btn">
+
+                            <i class="fa-solid fa-check"></i>
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- SESSION 3 -->
+
+                    <div class="study-item">
+
+                        <div class="study-time">
+
+                            <span>04:00</span>
+
+                            <small>PM</small>
+
+                        </div>
+
+
+                        <div class="study-line">
+
+                            <span></span>
+
+                        </div>
+
+
+                        <div class="study-details">
+
+                            <div class="study-title">
+
+                                <h4>Python Programming</h4>
+
+                                <span class="priority high">
+                                    High
+                                </span>
+
+                            </div>
+
+                            <p>
+                                Functions and data structures
+                            </p>
+
+                            <span class="duration">
+
+                                <i class="fa-regular fa-clock"></i>
+
+                                2 hours
+
+                            </span>
+
+                        </div>
+
+
+                        <button class="complete-btn">
+
+                            <i class="fa-solid fa-check"></i>
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- SESSION 4 -->
+
+                    <div class="study-item">
+
+                        <div class="study-time">
+
+                            <span>07:00</span>
+
+                            <small>PM</small>
+
+                        </div>
+
+
+                        <div class="study-line">
+
+                            <span></span>
+
+                        </div>
+
+
+                        <div class="study-details">
+
+                            <div class="study-title">
+
+                                <h4>Computer Networks</h4>
+
+                                <span class="priority low">
+                                    Low
+                                </span>
+
+                            </div>
+
+                            <p>
+                                Network models and protocols
+                            </p>
+
+                            <span class="duration">
+
+                                <i class="fa-regular fa-clock"></i>
+
+                                1 hour
+
+                            </span>
+
+                        </div>
+
+
+                        <button class="complete-btn">
+
+                            <i class="fa-solid fa-check"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= FOCUS ================= -->
+
+            <div class="focus-box">
+
+                <div class="focus-icon">
+
+                    <i class="fa-solid fa-bullseye"></i>
+
+                </div>
+
+                <div>
+
+                    <h3>Today's Focus</h3>
+
+                    <p>
+                        Complete Java Programming and DBMS
+                        before moving to the next subjects.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="js/main.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="js/study-planner.js"></script>
+
+</body>
+
+</html>

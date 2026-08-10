@@ -1,7 +1,8 @@
-/* ================================
+/* =================================
    CAMPUSCONNECT
    GLOBAL STYLES
-================================ */
+================================= */
+
 
 /* ---------- RESET ---------- */
 
@@ -18,6 +19,7 @@
 
     --background: #07111f;
     --sidebar: #081321;
+
     --card: #101d2e;
     --card-light: #14253a;
 
@@ -124,9 +126,9 @@ input {
 
 .main-content {
 
-    margin-left: 250px;
+    margin-left: 280px;
 
-    width: calc(100% - 250px);
+    width: calc(100% - 280px);
 
     min-height: 100vh;
 
@@ -144,9 +146,9 @@ input {
 
     .main-content {
 
-        margin-left: 220px;
+        margin-left: 280px;
 
-        width: calc(100% - 220px);
+        width: calc(100% - 280px);
     }
 }
 

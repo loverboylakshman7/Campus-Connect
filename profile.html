@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CampusConnect | Profile</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/profile.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <h1>
+                Campus<span>Connect</span>
+            </h1>
+
+            <p>
+                College Companion
+            </p>
+
+        </div>
+
+
+        <a href="profile.html"
+           class="profile-button">
+
+            <i class="fa-solid fa-user"></i>
+
+            <span>
+                Profile
+            </span>
+
+        </a>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="index.html"
+               class="nav-item">
+
+                <i class="fa-solid fa-house"></i>
+
+                <span>
+                    Dashboard
+                </span>
+
+            </a>
+
+
+            <a href="timetable.html"
+               class="nav-item">
+
+                <i class="fa-regular fa-calendar"></i>
+
+                <span>
+                    Timetable
+                </span>
+
+            </a>
+
+
+            <a href="assignments.html"
+               class="nav-item">
+
+                <i class="fa-regular fa-clipboard"></i>
+
+                <span>
+                    Assignments
+                </span>
+
+            </a>
+
+
+            <a href="study-planner.html"
+               class="nav-item">
+
+                <i class="fa-solid fa-book-open"></i>
+
+                <span>
+                    Study Planner
+                </span>
+
+            </a>
+
+
+            <a href="events.html"
+               class="nav-item">
+
+                <i class="fa-solid fa-ticket"></i>
+
+                <span>
+                    Event Hub
+                </span>
+
+            </a>
+
+
+            <a href="settings.html"
+               class="nav-item">
+
+                <i class="fa-solid fa-gear"></i>
+
+                <span>
+                    Settings
+                </span>
+
+            </a>
+
+        </nav>
+
+
+        <a href="#"
+           class="logout">
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+
+            <span>
+                Logout
+            </span>
+
+        </a>
+
+
+        <div class="sidebar-quote">
+
+            <i class="fa-solid fa-graduation-cap"></i>
+
+            <p>
+                Stay Organized,<br>
+                Stay Ahead!
+            </p>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main-content">
+
+
+        <!-- HEADER -->
+
+        <header class="top-header">
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    placeholder="Search">
+
+            </div>
+
+
+            <div class="header-actions">
+
+                <button
+                    class="notification-button"
+                    type="button">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+
+                <button
+                    class="user-button"
+                    type="button">
+
+                    <i class="fa-solid fa-user"></i>
+
+                </button>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- ================= PROFILE ================= -->
+
+        <section class="profile-page">
+
+
+            <div class="page-heading">
+
+                <h2>
+                    My Profile
+                </h2>
+
+                <p>
+                    View and manage your student information.
+                </p>
+
+            </div>
+
+
+
+            <!-- PROFILE CARD -->
+
+            <div class="profile-card">
+
+
+                <div class="profile-top">
+
+
+                    <div class="profile-avatar">
+
+                        <i class="fa-solid fa-user"></i>
+
+                    </div>
+
+
+                    <div class="profile-main-info">
+
+                        <h3 id="profileName">
+                            Student
+                        </h3>
+
+                        <p>
+                            Computer Engineering Student
+                        </p>
+
+                        <span class="student-status">
+
+                            <i class="fa-solid fa-circle"></i>
+
+                            Active Student
+
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- INFORMATION -->
+
+                <div class="profile-information">
+
+
+                    <div class="profile-info-item">
+
+                        <span class="info-label">
+                            Full Name
+                        </span>
+
+                        <strong id="displayName">
+                            Student
+                        </strong>
+
+                    </div>
+
+
+                    <div class="profile-info-item">
+
+                        <span class="info-label">
+                            Email Address
+                        </span>
+
+                        <strong id="displayEmail">
+                            student@example.com
+                        </strong>
+
+                    </div>
+
+
+                    <div class="profile-info-item">
+
+                        <span class="info-label">
+                            Course
+                        </span>
+
+                        <strong id="displayCourse">
+                            Computer Engineering
+                        </strong>
+
+                    </div>
+
+
+                    <div class="profile-info-item">
+
+                        <span class="info-label">
+                            Student ID
+                        </span>
+
+                        <strong>
+                            CC-2026-001
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- ACTION -->
+
+                <div class="profile-actions">
+
+                    <a href="settings.html"
+                       class="edit-profile-button">
+
+                        <i class="fa-solid fa-pen"></i>
+
+                        Edit Profile
+
+                    </a>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- QUICK INFORMATION -->
+
+            <div class="profile-stats">
+
+
+                <div class="profile-stat">
+
+                    <i class="fa-solid fa-calendar-check"></i>
+
+                    <div>
+
+                        <strong>
+                            85%
+                        </strong>
+
+                        <span>
+                            Attendance
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="profile-stat">
+
+                    <i class="fa-solid fa-book-open"></i>
+
+                    <div>
+
+                        <strong>
+                            12
+                        </strong>
+
+                        <span>
+                            Subjects
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="profile-stat">
+
+                    <i class="fa-solid fa-list-check"></i>
+
+                    <div>
+
+                        <strong>
+                            8
+                        </strong>
+
+                        <span>
+                            Completed Tasks
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+
+    <script src="js/main.js"></script>
+
+    <script src="js/sidebar.js"></script>
+
+    <script src="js/profile.js"></script>
+
+</body>
+
+</html>
